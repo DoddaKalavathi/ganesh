@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+  <div class="transition-message" id="transitionMessage">
+    <p>What fun is it if the surprise is revealed so easily? 😜 So, if you want to see the surprise, 
+        you have to pass this quiz! Let’s see how much you actually remember about us... 💖 Let’s begin!</p>
+    <div class="countdown" id="countdown">5</div>
+  </div>
+
+ 
+  <div class="quiz-container" id="quizContainer">
+    
+    <form id="quizForm">
+      <h1 class="text">To see the next page, you should answer correctly 💖</h1>
+      <div class="question">
+        <label>you made a mistake, and I felt bad about it. So when you're convincing me or asking for forgiveness, usually what do you call me?</label><br>
+        <input type="text" name="q1" required>
+      </div>
+      <div class="question">
+        <label>In Hyderabad, what is my favorite place to spend time with you?</label><br>
+        <input type="text" name="q2" required>
+      </div>
+      <div class="question">
+        <label>In our relationship, which day do I wish to recreate the most (Answer format: dd-mm-yyyy)?</label><br>
+        <input type="text" name="q3" required>
+      </div>
+      <button type="submit">Submit</button>
+      <img src="thinking.gif" id="thinking" class="thinking" alt="thinking" />
+    </form>
+
+    <div id="resultMessage"></div>
+
+    <div id="correctAnswers" class="hidden">
+      <p><strong>Correct Answers:</strong></p>
+      
+        <li><b>kalamma</b></li>
+        <li> <b>Qualcumm</b></li>
+        <li><b>15-03-2024</b></li>
+      
+    </div>
+  </div>
+ 
+  <script src="quiz.js"></script>
+</body>
+</html>

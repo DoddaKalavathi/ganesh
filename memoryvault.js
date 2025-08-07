@@ -67,14 +67,7 @@ const currentIndexes = {
 
 const bgMusic = document.getElementById("bgMusic");
 
-const musicTracks = {
-  family: "family.mp3",
-  education: "education.mp3",
-  friends: "friends1.mp3",
-  love: "love.mp3",
-  farming: "farming.mp3",
-  explore: "explore.mp3"
-};
+
 
 function playMusicFor(category) {
   const currentItem = slides[category][currentIndexes[category]];
@@ -145,4 +138,5 @@ function isActiveContainer(category) {
     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
 

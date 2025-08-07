@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ffe0ec, #fce4ec);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.entrance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to bottom right, #fdf0f0, #ffeaea);
+  padding: 0 20px;
+}
+
+.entrance-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #d63384;
+  max-width: 800px;
+  line-height: 1.4;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  animation: fadeIn 2s ease;
+  z-index: 2;
+}
+
+.enter-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff5fa2, #ffc371);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 2.5s ease;
+  z-index: 2;
+}
+
+.enter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.heart-group {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+}
+
+.heart-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  color: red;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: popIn 2.5s ease-in-out infinite alternate;
+}
+
+.heart-circle.big {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+}
+
+.heart-circle.medium {
+  width: 65px;
+  height: 65px;
+  font-size: 32px;
+}
+
+.heart-circle.small {
+  width: 50px;
+  height: 50px;
+  font-size: 28px;
+}
+
+.heart-circle.tiny {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+
+@keyframes popIn {
+  0% { transform: scale(1); opacity: 0.85; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+.hearts-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-emoji {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+.birthday-image {
+  margin-top: 30px;
+  max-width: 210px;
+  height: auto;
+  animation: fadeIn 5s ease-in-out;
+ }

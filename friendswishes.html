@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="friendswishes.css">
+</head>
+<body>
+
+  <!-- Countdown transition -->
+  <div class="transition-message" id="transitionMessage">
+    <p>Now taking you to something special... 🎉</p>
+    <div class="countdown" id="countdown">5</div> 
+  </div>
+
+  <!-- Hidden main content until countdown ends -->
+  <div class="container" id="content" style="display: none;">
+
+    <div class="video-slider">
+      <video id="friendVideo" controls width="600" height="300"></video>
+    
+    </div>
+
+     <div class="navigation">
+      <a href="finalpage.html" class="next-button">Now your turn</a>
+    </div>
+
+    <div class="controls">
+      <button onclick="changeVideo(-1)">◀️</button>
+      <button onclick="changeVideo(1)">▶️</button>
+    </div>
+
+   
+  </div>
+
+  <script src="friendwishes.js"></script>
+</body>
+</html>

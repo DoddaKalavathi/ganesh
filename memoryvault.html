@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Vault</title>
+  <link rel="stylesheet" href="memoryvault.css" />
+</head>
+<body>
+  <h1>💌Memory Vault 💌</h1>
+  <div class="vault-grid">
+    <div class="vault-container" id="family">
+      <h2>👨‍👩‍👧‍👦 Family</h2>
+      <div class="slider" id="family-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('family', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('family', 1)">▶️</button>
+      </div>
+    </div>
+
+    <div class="vault-container" id="education">
+      <h2>🎓 Education</h2>
+      <div class="slider" id="education-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('education', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('education', 1)">▶️</button>
+      </div>
+    </div>
+
+    <div class="vault-container" id="farming">
+      <h2>🌽 Farming</h2>
+      <div class="slider" id="farming-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('farming', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('farming', 1)">▶️</button>
+      </div>
+    </div>
+
+    <div class="vault-container" id="love">
+      <h2>❤️ Love</h2>
+      <div class="slider" id="love-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('love', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('love', 1)">▶️</button>
+      </div>
+    </div>
+
+    <div class="vault-container" id="friends">
+      <h2>🧑‍🤝‍🧑 Friends</h2>
+      <div class="slider" id="friends-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('friends', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('friends', 1)">▶️</button>
+      </div>
+    </div>
+
+ <div class="vault-container" id="explore">
+      <h2>🧑 Explore</h2>
+      <div class="slider" id="explore-slider"></div>
+      <div class="controls">
+        <button class="nav" onclick="changeSlide('explore', -1)">◀️</button>
+        <button class="nav" onclick="changeSlide('explore', 1)">▶️</button>
+      </div>
+    </div>
+  <audio id="bgMusic" autoplay loop></audio>
+  </div>
+<div class="next-button-container">
+  <a href="revealpage.html" class="next-button">See the next page 🎁</a>
+</div>
+  <script src="memoryvault.js"></script>
+</body>
+</html>

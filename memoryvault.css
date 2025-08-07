@@ -1,0 +1,96 @@
+body {
+  background-color: #ffeaf4;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #c2185b;
+  margin-bottom: 40px;
+}
+
+.vault-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.vault-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 10px 10px; 
+  width: 390px;
+  min-height: 330px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vault-container.wide {
+  flex: 1 1 45%;
+  max-width: 600px;
+}
+
+.vault-container h2 {
+  color: purple;
+  margin: 10px 0;
+}
+
+.slider img,
+.slider video {
+  width: 100%;       
+  padding: 0;        
+  margin: 0 auto;     
+  display: block;
+  border-radius: 10px;
+  object-fit: contain;
+  max-height: 250px; 
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav {
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.next-button-container {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.next-button {
+  background-color: #ff69b4;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:hover {
+  background-color: #e754a8;
+  transform: scale(1.05);
+}
+
+
+
+

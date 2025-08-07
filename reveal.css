@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.message {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 20px;
+  color: #f972be;
+}
+
+.photo-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.photo {
+  width: 450px;
+  border-radius: 20px;
+  animation: zoomFade 3s ease forwards;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.flying-kiss {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 180px;
+  transition: opacity 1s ease;
+  z-index: 10;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.flying-kiss:not(.hidden) {
+  opacity: 1;
+}
+
+.next-button-container {
+  margin-top: 40px;
+}
+
+.next-button {
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #ff1493;
+}

@@ -35,7 +35,7 @@ const videoSources = [
   'Manasa.mp4',
   'pavan.mp4',
   'muni.mp4',
-  'kala.mp4',
+  'lucky.mp4',
 
 ];
 
@@ -56,4 +56,5 @@ function changeVideo(direction) {
   videoPlayer.load();
   videoPlayer.play();
 }
+
 

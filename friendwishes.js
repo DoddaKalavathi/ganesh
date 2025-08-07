@@ -32,7 +32,7 @@ const countdownInterval = setInterval(() => {
 
 // List of video file paths
 const videoSources = [
-  'manasa.mp4',
+  'Manasa.mp4',
   'pavan.mp4',
   'muni.mp4',
   'kala.mp4',
@@ -56,3 +56,4 @@ function changeVideo(direction) {
   videoPlayer.load();
   videoPlayer.play();
 }
+

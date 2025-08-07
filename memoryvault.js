@@ -65,34 +65,7 @@ const currentIndexes = {
   explore: 0
 };
 
-const bgMusic = document.getElementById("bgMusic");
 
-const musicTracks = {
-  family: "family.mp3",
-  education: "education.mp3",
-  friends: "friends1.mp3",
-  love: "love.mp3",
-  farming: "farming.mp3",
-  explore: "explore.mp3"
-};
-
-function playMusicFor(category) {
-  const currentItem = slides[category][currentIndexes[category]];
-  const track = musicTracks[category];
-
-  if (currentItem.type === "video") {
-    bgMusic.pause();
-  } else {
-    if (track && (bgMusic.src !== location.origin + '/' + track)) {
-      bgMusic.src = track;
-      bgMusic.play().catch(err => {
-        console.warn("Autoplay blocked:", err);
-      });
-    } else if (bgMusic.paused) {
-      bgMusic.play();
-    }
-  }
-}
 
 function renderSlide(category) {
   const container = document.getElementById(`${category}-slider`);
